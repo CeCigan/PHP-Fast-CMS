@@ -1,0 +1,114 @@
+/* CSS - таблица стилей */
+
+* {	margin: 0px; padding: 0px;}								/* Убираем везде все отступы */
+body{
+	background-color:#c8c2aa;								/* Цвет общего фона */
+	font-family:Verdana, Arial, Helvetica, sans-serif;		/* Основной шрифт */
+	font-size:12px;											/* Основной размер шрифта */
+	color:#666666;											/* Основной цвет шрифта - серый */
+}
+#wrap {													/* Страница */
+	background:url(images/wrapbg.jpg) repeat-y;				/* Фон страницы */
+	width:927px;											/* Ширина страницы */
+	margin:25px auto 25px auto;								/* отступы страницы сверху и снизу */
+}
+
+/* <HEADER> */										/* ШАПКА */
+#header {												/* Рисунок на шапке */
+	background:url(images/header.jpg) no-repeat;
+	height:341px;
+}
+/* </HEADER> */
+
+#page {													
+	padding:0px 10px 0px 10px;								/* Отступы вокруг страницы */
+}
+/* <MENU> */
+#menu {													/* Меню */
+	float:left;												/* Слева */
+	background:url(images/sidemenu.jpg) no-repeat;			/* Фон ввиде блокнота */
+	width:180px;											/* Ширина */
+	height:382px;											/* Высота */
+	display: block;
+	padding: 95px 45px 0px 40px;							/* Отступы */
+}
+#sidemenu ul {
+	display:block;
+	list-style:none;										/* убрать маркеры (точки) в списке меню */
+}
+#sidemenu li {											/* пункт меню */
+	display:block;
+	height:26px;											/* высота пунктов меню */
+	border-top:solid 1px #FFFFFF;							/* белая черточка сверху над пунктами меню */
+}
+#sidemenu a, #sidemenu a:visited{						/* пункт меню (ссылка) */
+	display:block;
+	height:20px;											
+	padding:5px 5px 0px 5px;
+	color:#666666;
+	text-decoration:none;
+	border-bottom:solid 1px #DFCD95;
+}
+#sidemenu a:hover, .current_page_item{
+	background:#ffffcc;										/* Желтенький цвет фона меню при наведении */
+}
+/* </MENU> */
+
+/* <CONTENT> */
+#content {
+	margin:0px 0px 0px 275px;
+	padding:0px 20px 0px 5px;
+}
+#content p {
+	line-height:22px;
+	margin:0px 0px 25px 0px;
+}
+#content h2 {
+	font-family:Georgia, "Times New Roman", Times, serif; font-weight:normal;
+	font-size:26px;
+	color:#666600;
+	display:block;
+	margin-bottom:20px;
+}
+#content h2 a {
+	font-family:Georgia, "Times New Roman", Times, serif; font-weight:normal;
+	font-size:26px;
+	color:#666600;
+	text-decoration:none;
+}
+
+#content a, #content a:visited  {
+	color:#999900;
+}
+#content a:hover {
+	color:#000000;
+	text-decoration:none;
+}
+#content h2 .seo {
+	display:block;
+	text-align:right;
+	font-size:10px;
+	color:#999999;
+	background:#efefef;
+	padding:3px;
+}
+#content img {											/* Рамка вокруг рисунков */
+	background:#efefef;
+	margin:2px;
+	padding:4px;
+	border:solid 1px #999999;
+}
+/* </CONTENT> */
+
+/* <BOTTOM> */
+#browse {												/* Подвал (рисунок-полоска внизу) */
+	height:111px;											/* Высота */
+	background:url(images/postbott.jpg) no-repeat;			/* Картинка */
+}
+/* </BOTTOM> */
+
+#content img.nobord{
+	margin:0;
+	padding:0;
+	border:0;
+}
